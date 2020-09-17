@@ -1,4 +1,4 @@
 ## Pane
 ### close pane
-	ctrl+w q
-	:clo
+	`ctrl+w` `q`
+	`:clo`
