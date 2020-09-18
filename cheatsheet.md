@@ -13,3 +13,6 @@
     A moves the cursor to the end of the line and enters insert mode
     O inserts a new line above the current one and enters insert mode on the new line
 
+### Copy to system clipboard
+    "+y   copy
+    "+p   paste
