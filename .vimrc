@@ -40,10 +40,15 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
 
 set clipboard=unnamedplus
+
+" tab
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4
+set expandtab " use spaces
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType typescript setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType html setlocal shiftwidth=2 softtabstop=2 expandtab
 
