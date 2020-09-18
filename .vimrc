@@ -1,4 +1,4 @@
-call plug#begin(stdpath('data') . '/plugged')
+call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/vim-easy-align', {'branch': 'release'}
@@ -9,8 +9,16 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'patstockwell/vim-monokai-tasty'
+Plug 'crusoexia/vim-monokai'
 
 call plug#end()
+
+" icons
+set encoding=UTF-8
+
+" theme
+syntax on
+" colorscheme monokai_pro
 
 
 " Auto remove trailing spaces
@@ -20,20 +28,14 @@ autocmd BufWritePre * %s/\s\+$//e
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+" font CascadiaCodePL
+let g:NERDTreeDirArrowExpandable = ""
+let g:NERDTreeDirArrowCollapsible = ""
 
 let g:indentLine_color_gui = '#363442'
 
 set listchars=tab:>·,trail:~,extends:>,precedes:<
 set list
-
-syntax on
-colorscheme vim-monokai-tasty
-let g:vim_monokai_tasty_italic = 1
-let g:lightline = {
-      \ 'colorscheme': 'monokai_tasty',
-      \ }
 
 " don't use arrowkeys
 noremap <Up> <NOP>
