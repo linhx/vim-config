@@ -15,6 +15,8 @@ call plug#end()
 
 " icons
 set encoding=UTF-8
+" show line number
+set number
 
 " theme
 syntax on
